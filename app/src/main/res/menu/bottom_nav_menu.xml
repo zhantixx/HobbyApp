@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+
+        />
+
+    <item
+        android:id="@+id/nav_edit"
+        android:icon="@drawable/edit"
+
+        />
+    <item
+        android:id="@+id/nav_friends"
+        android:icon="@drawable/friends"
+        />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat"
+
+        />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_page"
+
+        />
+
+</menu>

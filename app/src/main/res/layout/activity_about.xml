@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AboutActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HobbyApp – ортақ қызығушылықтар арқылы адамдарды таныстыратын заманауи мобильді қосымша.  Бұл қосымша әртүрлі хоббилері мен қызығушылықтары бар адамдарды біріктіруге арналған. HobbyApp арқылы сіз өзіңізге ұнайтын іспен айналысатын жаңа достар таба аласыз, қызығушылықтар клубтарына қосылып, түрлі шараларға қатыса аласыз.  Қосымшаның басты мақсаты – бос уақытты пайдалы әрі қызықты өткізуге көмектесу. Сурет салу, музыка, спорт, кітап оқу, IT, қолөнер, саяхат және басқа да бағыттар бойынша клубтар бар. Әрбір қолданушы өз қызығушылығына сай клуб тауып, сол ортада жаңа адамдармен таныса алады.  HobbyApp мүмкіндіктері: Ортақ қызығушылығы бар адамдармен танысу  Қызығушылықтар бойынша клубтар мен үйірмелерге қосылу  Жақын маңдағы шаралар туралы ақпарат алу  Қатысушылармен пікір алмасу және клуб ішінде сөйлесу  Ең белсенді қолданушыларға арналған марапаттар мен жетістіктер жүйесі  HobbyApp кез келген жастағы қолданушыға арналған. Бұл – жаңа достар табудың, өз қызығушылықтарыңызды дамытудың және бос уақытыңызды пайдалы өткізудің тамаша жолы.  HobbyApp – хобби арқылы өміріңді жаңа деңгейге көтер."
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bağdarlama turaly"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn2"
+        app:layout_constraintTop_toTopOf="@+id/backBtn2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

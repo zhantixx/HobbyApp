@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="HobbyHub"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HobbyApp1"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.FriendProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SliderActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.TopListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

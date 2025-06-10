@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/detImg"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/light_puple_bg"
+            app:srcCompat="@drawable/doctor" />
+
+        <TextView
+            android:id="@+id/degreTxtDet"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/light_purple_bg_full_corner"
+            android:drawableStart="@drawable/tick"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Tekserılgen"
+            android:textColor="@color/purple"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/detImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTxtDet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/degreTxtDet"
+            app:layout_constraintTop_toBottomOf="@+id/degreTxtDet" />
+
+        <TextView
+            android:id="@+id/specTxtDet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="special"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/nameTxtDet"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxtDet" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="?attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progress="5"
+            android:progressTint="#ffc106"
+            android:rating="4"
+            app:layout_constraintBottom_toBottomOf="@+id/detImg"
+            app:layout_constraintStart_toStartOf="@+id/specTxtDet" />
+
+        <TextView
+            android:id="@+id/ratTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar2"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

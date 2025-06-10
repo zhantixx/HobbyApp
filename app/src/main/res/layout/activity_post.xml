@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/text_bg"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/text_bg"
+                android:text="Surret tańdaý"
+                android:textColor="@color/purple"/>
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/title"
+android:drawablePadding="12dp"
+                android:hint="Taqyryby"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Sypattama"
+                android:drawableStart="@drawable/description"
+                android:drawablePadding="12dp"
+                android:background="@drawable/text_bg"
+                android:minLines="3"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/editLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:drawableStart="@drawable/location_post"
+                android:hint="Ornalasqan jeri"
+                android:drawablePadding="12dp"
+                android:background="@drawable/text_bg"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/text_bg"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="12dp"
+                android:hint="Küni"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/editCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Kategoriýa"
+                android:drawableStart="@drawable/category"
+                android:drawablePadding="12dp"
+                android:background="@drawable/text_bg"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/buttonPublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/purple_button_stroke"
+                android:text="Jariyalaý"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Post jariyalaý"
+
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
